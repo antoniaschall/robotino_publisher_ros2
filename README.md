@@ -10,16 +10,11 @@ MAIN FEATURES:
 
 OVERVIEW:
 
-1. CMakeLists.txt and package.xml
-  - Define ROS 2 package dependencies and build instructions.
-2. launch/robotino_publisher_launch.py
-  - Example launch file that starts the Robotino Publisher node with an IP address parameter.
-3. include/robotino_publisher/robotino_publisher.hpp
-  - Declares the RobotinoPublisher class (inheriting from rclcpp::Node, rec::robotino::api2::Com, and rec::robotino::api2::Odometry).
-4. src/robotino_publisher.cpp
-  - Implements the core logic for connecting to Robotino, publishing data, handling triggers, and automatically attempting reconnection.
-5. src/main.cpp
-  - Entry point. Creates and spins the RobotinoPublisher node within ROS 2.
+1. CMakeLists.txt and package.xml: Define ROS 2 package dependencies and build instructions.
+2. launch/robotino_publisher_launch.py: Example launch file that starts the Robotino Publisher node with an IP address parameter.
+3. include/robotino_publisher/robotino_publisher.hpp: Declares the RobotinoPublisher class (inheriting from rclcpp::Node, rec::robotino::api2::Com, and rec::robotino::api2::Odometry).
+4. src/robotino_publisher.cpp: Implements the core logic for connecting to Robotino, publishing data, handling triggers, and automatically attempting reconnection.
+5. src/main.cpp: Entry point. Creates and spins the RobotinoPublisher node within ROS 2.
 
 DEPENDENCIES:
 
